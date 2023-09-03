@@ -1,0 +1,23 @@
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 15s
+  main:
+    banner-mode: off
+
+springdoc:
+  swagger-ui:
+    use-root-path: true
+
+server:
+  shutdown: graceful
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /_monitoring
+
+credentials:
+  username: simge.sisman
+  password: 123456
